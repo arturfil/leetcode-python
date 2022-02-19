@@ -1,11 +1,11 @@
 # from Arrays import two_sum
-from HashMaps.two_sum import TwoSum
+from HashMaps.roman_to_integer import RomanToInteger
 
 def main():
-    target = 9
-    nums = [2,7,11,15]
-    two = TwoSum()
-    two.twoSum(nums, target)
+    # test = "MCMXCIV"
+    test = "LVIII"
+    roman = RomanToInteger();
+    print(roman.romanToInteger(test))
 
 if __name__ == "__main__":
     main()
