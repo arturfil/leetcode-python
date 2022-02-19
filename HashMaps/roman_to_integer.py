@@ -22,4 +22,17 @@ class RomanToInteger:
             
         return sum
 
+'''
+    TESTING
+    # test = "MCMXCIV"
+    test = "LVIII"
+    roman = RomanToInteger();
+    print(roman.romanToInteger(test))
 
+    EXPLANATION
+    - You are going to iterate through the loop and in the case that 
+    the string value is less than the next value i.e. IX -> 9, in roman
+    you would add 10 then substract the one so it would fall in the first
+    if case.
+    - Since you account for two numbers you increment "i" by 2
+'''
