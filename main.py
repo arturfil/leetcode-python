@@ -1,5 +1,5 @@
 # from Arrays import two_sum
-from Arrays.two_sum import TwoSum
+from HashMaps.two_sum import TwoSum
 
 def main():
     target = 9
