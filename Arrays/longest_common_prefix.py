@@ -25,5 +25,4 @@ class LongestPrefix:
     - If all strings have a common prefix you would have cut enough characters out
     that you end up with the common prefix.
     - If there are non strings left means there NO common prefix
-
 '''
