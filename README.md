@@ -8,18 +8,18 @@
 <br/>
 <br/>
 I'ts funny cause with python you can be blazing fast in coding interviews (hence flash)
-But in general python is a slow language when ti comes to processing speed
+But in general python is a slow language when it comes to processing speed
 <br/>
 <br/>
 Since we are focusing on BigO (time complexity) & Memory Efficiency, we don't really care
-that python is slow in processing cause it's blazing fast when it comes to writing algos.
+that python is slow in processing cause it's blazing fast when it comes to writing algos ⚡️.
 <br/>
 <br/>
 It also happens to be super readable (almost pseudo code) which makes it better for both
 candidate and intreviewer (at least that's my take).
 <br/>
 <br/>
-And thus, I created s run.sh shell script to run main.py
+And thus, I created a run.sh shell script to run main.py
 main.py is like your main file in java, csharp, c, c++ etc. 
 I like to keep that strucutre that way when you move to other languages it's not that
 different.
