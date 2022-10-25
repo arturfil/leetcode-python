@@ -1,14 +1,14 @@
 from typing import List
 
 class TwoSum:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        hashmap = {}
-        for i in range(len(nums)):
-            complement = target - nums[i]
-            if complement in hashmap:
-                return [hashmap[complement], i]
+    def two_sum(self, nums: List[int], target: int) -> List[int]:
+        map = {}
+        for i in range(0, len(nums)):
+            key = target - nums[i]
+            if key in map:
+                return [i, map[key]]
             else:
-                hashmap[nums[i]] = i
+                map[nums[i]] = i
 
 '''
     TESTING

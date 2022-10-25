@@ -1,1 +1,3 @@
-python3 main.py
+# python3 main.py
+
+source venv/bin/activate

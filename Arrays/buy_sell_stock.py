@@ -2,14 +2,13 @@ from typing import List
 
 class BuySellSock:
     def maxProfit(self, prices: List[int]) -> int:
-        min_price = prices[0]
-        max_price = 0
-        for i in range(len(prices)):
-            if prices[i] < min_price:
-                min_price = prices[i]
-            elif prices[i] - min_price > max_price:
-                max_price = prices[i] - min_price
-        
+        max_price, min_price = 0, float('inf')
+        for stock in prices:
+            if stock < min_price:
+                min_price = stock
+            else:
+                max_price = max(max_price, stock - min_price)
+
         return max_price
 
 '''
