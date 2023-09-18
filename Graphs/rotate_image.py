@@ -1,7 +1,6 @@
 from typing import List
 
 class RotateImage:
-
     def rotate(self, matrix: List[List[int]]) -> None:
         self.transpose(matrix)
         self.reflect(matrix)
