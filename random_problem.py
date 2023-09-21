@@ -1,7 +1,7 @@
 import random
 
 problems = [
-   { "name": "Two Sum II - Input array is sorted", "done": False},
+   { "name": "Two Sum II - Input array is sorted", "done": True},
    { "name": "Integer to Roman", "done": False},
    { "name": "Roman to Integer", "done": False},
    { "name": "3Sum Closest", "done": False},
@@ -16,7 +16,7 @@ problems = [
    { "name": "Two Sum", "done": False},
    { "name": "Best Time to Buy and Sell Stock", "done": False},
    { "name": "Contains Duplicate", "done": False},
-   { "name": "Product of Array Except Self", "done": False},
+   { "name": "Product of Array Except Self", "done": True},
    { "name": "Maximum Subarray", "done": False},
    { "name": "Maximum Product Subarray", "done": False},
    { "name": "Find Minimum in Rotated Sorted Array", "done": False},
@@ -93,7 +93,7 @@ problems = [
    { "name": "Number of Laser Beams", "done": False},
    { "name": "Symmetric Tree", "done": False},
    { "name": "Binary Tree Zigzag Level Order Traversal", "done": False},
-   { "name": "Binary Tree Level Order Traversal", "done": False},
+   { "name": "Binary Tree Level Order Traversal", "done": True},
    { "name": "Serialize and Deserialize Binary Tree", "done": False},
    { "name": "Subtree of Another Tree", "done": False},
    { "name": "Construct Binary Tree from Preorder and Inorder Traversal", "done": False},

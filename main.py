@@ -1,11 +1,11 @@
-from Arrays.buy_sell_stock import BuySellSock
-from Arrays.product_of_array_except_self import ProductOfArrayExceptSelf
-from Graphs.number_of_islands import NumberOfIslands
-from Matrix.matrix import SpiralMatrix
+from Arrays.missing_number import MissingNumber
+from Arrays.products_except_self import ProductExceptSelf
 from random_problem import chose_random
 
 def main():
-   chose_random() 
+   # chose_random() 
+   prod_except = ProductExceptSelf()
+   prod_except.productsExceptSelf([1,2,3,4])
 
 if __name__ == "__main__":
     main()
