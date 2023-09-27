@@ -1,10 +1,10 @@
-from Arrays.missing_number import MissingNumber
-from Arrays.products_except_self import ProductExceptSelf
-from Matrix.set_matrix_zeroes import SetMatrixZeroes
+from Search.k_closest_point import KClosestPoint
 from random_problem import chose_random
 
 def main():
-    pass 
+   closest = KClosestPoint()
+   res = closest.kClosest([[1,2], [2,4], [4,5], [4,2], [2,1], [5,1]], 3)
+   print(res)
 
 if __name__ == "__main__":
     main()
