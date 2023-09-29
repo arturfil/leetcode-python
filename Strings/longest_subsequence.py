@@ -1,5 +1,5 @@
-class LongestCommonSubstring:
-    def length_of_longest_subs(self, s: str) -> int:
+class LongestCommonSubsequence:
+    def length_of_longest_common_subs(self, s: str) -> int:
         chars = {}
         result = ""
         for i in range(len(s)):
@@ -8,7 +8,6 @@ class LongestCommonSubstring:
             else:
                 chars[s[i]] = 1
             result += s[i]
-        
 
 
 '''
