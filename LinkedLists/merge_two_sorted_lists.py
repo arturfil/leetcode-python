@@ -3,7 +3,7 @@ from LinkedLists.listnode import ListNode
 
 
 class MergeTwoSortedLists:
-    def merge_two_lists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         if list1 is None: return list2
         if list2 is None: return list1 
         
