@@ -62,7 +62,7 @@ problems = [
    { "name": "Non-overlapping Intervals", "done": False},
    { "name": "Meeting Rooms (Leetcode Premium)", "done": False},
    { "name": "Meeting Rooms II (Leetcode Premium)", "done": False},
-   { "name": "Reverse a Linked List", "done": False},
+   { "name": "Reverse a Linked List", "done": True},
    { "name": "Detect Cycle in a Linked List", "done": False},
    { "name": "Add Two Numbers", "done": False},
    { "name": "Reverse Nodes in k-Group", "done": False},
