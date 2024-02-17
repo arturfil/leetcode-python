@@ -6,10 +6,8 @@ class WordDictionary:
     def addWord(self, word: str) -> None:
         l = len(word)
         if not l in self.words:
-            self.words[l] = set()
-            self.words[l].add(word)
-        else:
-            self.words[l].add(word)
+            self.words[l] = set() # make sure there's a set in place before adding
+        self.words[l].add(word) # you can do this regardless because it doesn't make a diff
 
     def search(self, word: str) -> bool:
         m = len(word)
