@@ -1,6 +1,5 @@
 class LongestCommonSubsequence:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
-
         len1, len2 = len(text1), len(text2)
         # Create 2D grid
         dp = [[0 for col in range(len2 + 1)] for row in range(len1 + 1)] # leave as is, it's easy to understand row and col

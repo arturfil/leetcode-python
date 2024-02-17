@@ -13,9 +13,11 @@ class WordDictionary:
 
     def search(self, word: str) -> bool:
         m = len(word)
-        for dict_word in self.words[m]:
+        if m not in self.words: return False
+
+        for w in self.words[m]:
             i = 0
-            while i < m and (dict_word[i] == word[i] or word[i] == '.'):
+            while i < m and (w[i] == word[i] or word[i] == '.'):
                 i += 1
             if i == m:
                 return True
