@@ -1,10 +1,14 @@
 from typing import Optional
-
 from BinaryTree.tree_node import TreeNode
 
-
-class InvertBinaryTree:
+class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-        if root not None:
-            left = root.left  
-            right = root.right
+        if root != None:
+
+            left, right = root.left, root.right
+
+            root.left = self.invertTree(right)
+            root.right = self.invertTree(left)
+
+        return root
+

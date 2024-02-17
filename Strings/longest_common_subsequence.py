@@ -2,14 +2,14 @@ class LongestCommonSubsequence:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
 
         len1, len2 = len(text1), len(text2)
-        dp = [[0 for j in range(len2 + 1)] for i in range(len1 + 1)] 
+        # Create 2D grid
+        dp = [[0 for col in range(len2 + 1)] for row in range(len1 + 1)] # leave as is, it's easy to understand row and col
 
-        for i in range(1, len1 + 1):
-            for j in range(1, len2 + 1):
-                if text1[i-1] == text2[j-1]:
-                    dp[i][j] = 1 + dp[i - 1][j - 1]
+        for row in reversed(range(len1)):
+            for col in reversed(range(len2)):
+                if text1[row] == text2[col]:
+                    dp[row][col] = 1 + dp[row + 1][col + 1]
                 else:
-                    dp[i][j] = max(dp[i][j - 1], dp[i - 1][j])
+                    dp[row][col] = max(dp[row + 1][col], dp[row][col + 1]) # max from diagonal
 
-        return dp[len1][len2]
-
+        return dp[0][0] # return max wlen from table

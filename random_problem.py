@@ -1,133 +1,36 @@
 import random
+import json
 
-problems = [
-   { "name": "Two Sum II - Input array is sorted", "done": True},
-   { "name": "Integer to Roman", "done": False},
-   { "name": "Roman to Integer", "done": False},
-   { "name": "3Sum Closest", "done": False},
-   { "name": "Implement strStr()", "done": False},
-   { "name": "String to Integer (atoi)", "done": False},
-   { "name": "Compare Version Numbers", "done": False},
-   { "name": "Integer to English Words", "done": False},
-   { "name": "First Unique Character in a String", "done": False},
-   { "name": "Most Common Word", "done": False},
-   { "name": "Reorder Log Files", "done": False},
-   { "name": "Trapping Rain Water", "done": False},
-   { "name": "Two Sum", "done": False},
-   { "name": "Best Time to Buy and Sell Stock", "done": False},
-   { "name": "Contains Duplicate", "done": False},
-   { "name": "Product of Array Except Self", "done": True},
-   { "name": "Maximum Subarray", "done": False},
-   { "name": "Maximum Product Subarray", "done": False},
-   { "name": "Find Minimum in Rotated Sorted Array", "done": False},
-   { "name": "Search in Rotated Sorted Array", "done": False},
-   { "name": "3 Sum", "done": False},
-   { "name": "Container With Most Water", "done": False},
-   { "name": "Sum of Two Integers", "done": False},
-   { "name": "Number of 1 Bits", "done": False},
-   { "name": "Counting Bits", "done": False},
-   { "name": "Missing Number", "done": False},
-   { "name": "Reverse Bits", "done": False},
-   { "name": "Climbing Stairs", "done": False},
-   { "name": "Coin Change", "done": False},
-   { "name": "Longest Increasing Subsequence", "done": False},
-   { "name": "Word Break II", "done": False},
-   { "name": "Longest Common Subsequence", "done": False},
-   { "name": "Word Break", "done": False},
-   { "name": "Combination Sum", "done": False},
-   { "name": "House Robber", "done": False},
-   { "name": "House Robber II", "done": False},
-   { "name": "Decode Ways", "done": False},
-   { "name": "Unique Paths", "done": False},
-   { "name": "Jump Game", "done": False},
-   { "name": "Clone Graph", "done": False},
-   { "name": "Letter Combinations of a Phone Number", "done": False},
-   { "name": "Generate Parentheses", "done": False},
-   { "name": "Median of Two Sorted Arrays", "done": False},
-   { "name": "Course Schedule", "done": False},
-   { "name": "Pacific Atlantic Water Flow", "done": False},
-   { "name": "Number of Islands", "done": False},
-   { "name": "Word Ladder II", "done": False},
-   { "name": "Word Ladder", "done": False},
-   { "name": "Snakes and Ladders", "done": False},
-   { "name": "Flood Fill", "done": False},
-   { "name": "Diameter of Binary Tree", "done": False},
-   { "name": "Cut Off Trees for Golf Event", "done": False},
-   { "name": "Longest Consecutive Sequence", "done": False},
-   { "name": "Alien Dictionary (Leetcode Premium)", "done": False},
-   { "name": "Graph Valid Tree (Leetcode Premium)", "done": False},
-   { "name": "Number of Connected Components in an Undirected Graph (Leetcode Premium)", "done": False},
-   { "name": "Insert Interval", "done": False},
-   { "name": "Merge Intervals", "done": False},
-   { "name": "Non-overlapping Intervals", "done": False},
-   { "name": "Meeting Rooms (Leetcode Premium)", "done": False},
-   { "name": "Meeting Rooms II (Leetcode Premium)", "done": False},
-   { "name": "Reverse a Linked List", "done": True},
-   { "name": "Detect Cycle in a Linked List", "done": False},
-   { "name": "Add Two Numbers", "done": False},
-   { "name": "Reverse Nodes in k-Group", "done": False},
-   { "name": "Copy List with Random Pointer", "done": False},
-   { "name": "Merge Two Sorted Lists", "done": False},
-   { "name": "Merge K Sorted Lists", "done": False},
-   { "name": "Remove Nth Node From End Of List", "done": False},
-   { "name": "Reorder List", "done": False},
-   { "name": "Set Matrix Zeroes", "done": False},
-   { "name": "Spiral Matrix", "done": True},
-   { "name": "Spiral Matrix", "done": True},
-   { "name": "Rotate Image", "done": False},
-   { "name": "Word Search", "done": False},
-   { "name": "Longest Substring Without Repeating Characters", "done": False},
-   { "name": "Longest Repeating Character Replacement", "done": False},
-   { "name": "Minimum Window Substring", "done": False},
-   { "name": "Valid Anagram", "done": False},
-   { "name": "Group Anagrams", "done": False},
-   { "name": "Valid Parentheses", "done": False},
-   { "name": "Valid Palindrome", "done": False},
-   { "name": "Longest Palindromic Substring", "done": False},
-   { "name": "Palindromic Substrings", "done": False},
-   { "name": "Encode and Decode Strings (Leetcode Premium)", "done": False},
-   { "name": "Maximum Depth of Binary Tree", "done": False},
-   { "name": "Same Tree", "done": False},
-   { "name": "Invert/Flip Binary Tree", "done": False},
-   { "name": "Binary Tree Maximum Path Sum", "done": False},
-   { "name": "Number of Laser Beams", "done": False},
-   { "name": "Symmetric Tree", "done": False},
-   { "name": "Binary Tree Zigzag Level Order Traversal", "done": False},
-   { "name": "Binary Tree Level Order Traversal", "done": True},
-   { "name": "Serialize and Deserialize Binary Tree", "done": False},
-   { "name": "Subtree of Another Tree", "done": False},
-   { "name": "Construct Binary Tree from Preorder and Inorder Traversal", "done": False},
-   { "name": "Validate Binary Search Tree", "done": False},
-   { "name": "Kth Smallest Element in a BST", "done": False},
-   { "name": "Lowest Common Ancestor of BST", "done": False},
-   { "name": "Implement Trie (Prefix Tree)", "done": False},
-   { "name": "Add and Search Word", "done": False},
-   { "name": "Word Search II", "done": False},
-   { "name": "Top K Frequent Elements", "done": False},
-   { "name": "Find Median from Data Stream", "done": False},
-   { "name": "Minimum Number of Taps to Open to Water a Garden", "done": False},
-   { "name": "Find Median of Two Sorted  Arrays", "done": False},
-   { "name": "Kth Largest Element in an Array", "done": False},
-   { "name": "K Closest Points to Origin", "done": False},
-   { "name": "LRU Cache", "done": False},
-   { "name": "LFU cache implementation", "done": False},
-   { "name": "Min Stack", "done": False},
-   { "name": "Design Tic-Tac-Toe", "done": False},
-   { "name": "Design Search Autocomplete System", "done": False},
-   { "name": "Design In Memroy File System", "done": False},
-   { "name": "Maximum Frequency Stack", "done": False},
-   { "name": "Reverse Integer", "done": False},
-   { "name": "Second Highest Salary", "done": False},
-   { "name": "Partition Labels", "done": False},
-   { "name": "Prison Cells After N Days", "done": False},
-   { "name": "Concatenated Words", "done": False},
-   { "name": "Maximum Number of Books You Can Take", "done": False}
-]
+def read_file(file_name):
+    file = open(file_name)
 
-def chose_random():
-   chosen = random.choice(problems)
-   
-   while chosen["done"] != False:
-      chosen = random.choice(problems)
+    data = json.load(file)
 
-   print(chosen)
+    return data
+
+
+def get_notdone_problems():
+    not_done = [] # problems not done
+    data = read_file("data.json")
+
+    for obj in data["problems"]:
+        if obj["done"] == False:
+            not_done.append(obj)
+
+    return not_done
+
+
+def choose_random(exclude, category):
+    probs = get_notdone_problems()
+
+    if exclude == "True":
+        probs = [x for x in probs if x["isFrom75"] == True]
+
+    if category != "all":
+        probs = [x for x in probs if x["category"] == category]
+
+    print("not done ->", len(probs))
+
+    idx = random.randint(0, len(probs)-1)
+
+    print("Problem ->", probs[idx]["title"])
