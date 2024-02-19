@@ -1,32 +1,13 @@
-from Strings.longest_common_subsequence import LongestCommonSubsequence
-from SystemsDesign.word_dictionary import WordDictionary
+from Graphs.course_schedule import CourseSchedule
 from flags import return_flags
-
-from random_problem import choose_random 
 
 args = return_flags()
 
 def main():
-    wd = WordDictionary()
-    wd.addWord("cat")
-    wd.addWord("hat")
-    wd.addWord("bat")
-
-    wd.addWord("doll")
-    wd.addWord("matt")
-    wd.addWord("crow")
-
-    # wd.search("cat")
-    wd.search("cats")
+    cs = CourseSchedule()
+    # res = cs.canFinish(5, [[1,0], [3, 2], [2, 4], [1, 3]])
+    res = cs.canFinish(2, [[1,0], [0, 1]])
+    print(res)
 
 if __name__ == "__main__":
     main()
-
-
-'''
-    TODO:
-        - Palindromic Substrings
-        - LongestCommonSubsequence
-        - RotateImage
-        - MaxSubArray
-'''
