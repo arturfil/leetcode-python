@@ -13,8 +13,9 @@ class CourseSchedule:
                 return False
         return True
 
+    # we do dfs because we want to know if we can finish
     def dfs(self, node, visiting, courses):
-        if node in visiting:
+        if node in visiting: # cycle
             return False
         if courses[node] == []: # if empty means no reqs
             return True
@@ -22,10 +23,10 @@ class CourseSchedule:
         visiting.add(node)
 
         for pre in courses[node]:
-            if not self.dfs(pre, visiting, courses):
+            if not self.dfs(pre, visiting, courses): # cycle
                 return False
 
-        visiting.remove(node)
+        visiting.remove(node) # remove visiting
 
         courses[node] = [] # no cycle, doable
         return True

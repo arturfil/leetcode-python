@@ -6,10 +6,11 @@ class Solution:
         res = [intervals[0]]
         
         for interval in intervals:
-            if res[-1][1] < interval[0]:
+            last = res[-1]
+            if last[1] < interval[0]:
                 res.append(interval)
             else:
-                res[-1][1] = max(res[-1][1], interval[1])
+                last[1] = max(last[1], interval[1])
         
         return res
           

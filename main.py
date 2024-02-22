@@ -1,13 +1,28 @@
 from Graphs.course_schedule import CourseSchedule
+from Matrix.rotate_image import RotateImage
+from Strings.group_anagrams import GroupAnagrams
+from SystemsDesign.rate_limiter import APIRateLimiter
 from flags import return_flags
+from random_problem import choose_random
 
 args = return_flags()
 
 def main():
-    cs = CourseSchedule()
-    # res = cs.canFinish(5, [[1,0], [3, 2], [2, 4], [1, 3]])
-    res = cs.canFinish(2, [[1,0], [0, 1]])
-    print(res)
+# choose_random(args.exclude, args.category)
+    rate_limiter = APIRateLimiter()
+    print(rate_limiter.allow_request())
+    print(rate_limiter.allow_request())
+    print(rate_limiter.allow_request())
+    print(rate_limiter.allow_request())
+    print(rate_limiter.allow_request())
+    print(rate_limiter.allow_request())
+    print(rate_limiter.allow_request())
+    print(rate_limiter.allow_request())
+    print(rate_limiter.allow_request())
+    print(rate_limiter.allow_request())
+    print(rate_limiter.allow_request())
+    print(rate_limiter.allow_request())
+    print(rate_limiter.allow_request())
 
 if __name__ == "__main__":
     main()
