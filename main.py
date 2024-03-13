@@ -1,28 +1,21 @@
-from Graphs.course_schedule import CourseSchedule
 from Matrix.rotate_image import RotateImage
-from Strings.group_anagrams import GroupAnagrams
-from SystemsDesign.rate_limiter import APIRateLimiter
 from flags import return_flags
 from random_problem import choose_random
 
 args = return_flags()
 
 def main():
-# choose_random(args.exclude, args.category)
-    rate_limiter = APIRateLimiter()
-    print(rate_limiter.allow_request())
-    print(rate_limiter.allow_request())
-    print(rate_limiter.allow_request())
-    print(rate_limiter.allow_request())
-    print(rate_limiter.allow_request())
-    print(rate_limiter.allow_request())
-    print(rate_limiter.allow_request())
-    print(rate_limiter.allow_request())
-    print(rate_limiter.allow_request())
-    print(rate_limiter.allow_request())
-    print(rate_limiter.allow_request())
-    print(rate_limiter.allow_request())
-    print(rate_limiter.allow_request())
+    # choose_random(args.exclude, args.category)
+    matrix = [[1,2,3], [4,5,6], [7,8,9]]
+
+    m = RotateImage()
+    m.rotate(matrix)
+
+    for i in range(len(matrix[0])):
+        print(matrix[i])
+
 
 if __name__ == "__main__":
     main()
+
+

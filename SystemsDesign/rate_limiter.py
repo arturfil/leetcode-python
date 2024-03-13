@@ -19,3 +19,17 @@ class APIRateLimiter:
         else:
             return False
 
+    # rate_limiter = APIRateLimiter()
+    # print(rate_limiter.allow_request())
+    # print(rate_limiter.allow_request())
+    # print(rate_limiter.allow_request())
+    # print(rate_limiter.allow_request())
+    # print(rate_limiter.allow_request())
+    # print(rate_limiter.allow_request())
+    # print(rate_limiter.allow_request())
+    # print(rate_limiter.allow_request())
+    # print(rate_limiter.allow_request())
+    # print(rate_limiter.allow_request())
+    # print(rate_limiter.allow_request())
+    # print(rate_limiter.allow_request())
+    # print(rate_limiter.allow_request())
