@@ -31,3 +31,20 @@ chmod 755 exec.sh
 
 To run the shell script I just press "./e" and tab so it autocompletes the run.sh script
 
+### Possible categories
+
+    - binary-tree
+    - heaps
+    - sort-search
+    - systems-design
+    - matrix
+    - linked-lists
+    - intervals
+    - graphs
+    - dynamic-programming
+    - arrays
+
+### run example command 
+```
+make run category=intervals exclude=True
+```
