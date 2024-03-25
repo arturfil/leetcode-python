@@ -1,6 +1,6 @@
 {
     "problems": [
-        {"isFrom75": false, "algorithm": "", "category": "arrays",              "done": false, "title": "Two Sum II - Input array is sorted"},
+        {"isFrom75": false, "algorithm": "", "category": "arrays",              "done": true, "title": "Two Sum II - Input array is sorted"},
         {"isFrom75": false, "algorithm": "", "category": "arrays",              "done": false, "title": "Integer to Roman"},
         {"isFrom75": false, "algorithm": "", "category": "arrays",              "done": false, "title": "Roman to Integer"},
         {"isFrom75": false, "algorithm": "", "category": "arrays",              "done": false, "title": "3Sum Closest"},
@@ -16,7 +16,7 @@
         {"isFrom75": true,  "algorithm": "sliding window", "category": "arrays","done": true, "title": "Best Time to Buy and Sell Stock"},
         {"isFrom75": true,  "algorithm": "hashmap", "category": "arrays",              "done": true, "title": "Contains Duplicate"},
         {"isFrom75": true,  "algorithm": "arrays", "category": "arrays",              "done": false, "title": "Product of Array Except Self"},
-        {"isFrom75": true,  "algorithm": "", "category": "arrays",              "done": false, "title": "Maximum Subarray"},
+        {"isFrom75": true,  "algorithm": "", "category": "arrays",              "done": true, "title": "Maximum Subarray"},
         {"isFrom75": true,  "algorithm": "", "category": "arrays",              "done": false, "title": "Maximum Product Subarray"},
         {"isFrom75": true,  "algorithm": "", "category": "arrays",              "done": false, "title": "Find Minimum in Rotated Sorted Array"},
         {"isFrom75": true,  "algorithm": "", "category": "arrays",              "done": false, "title": "Search in Rotated Sorted Array"},
@@ -84,7 +84,7 @@
         {"isFrom75": true,  "algorithm": "1-D DP", "category": "strings",             "done": true, "title": "Longest Palindromic Substring"},
         {"isFrom75": true,  "algorithm": "", "category": "strings",             "done": false, "title": "Palindromic Substrings"},
         {"isFrom75": true,  "algorithm": "", "category": "strings",             "done": false, "title": "Encode and Decode Strings (Leetcode Premium)"},
-        {"isFrom75": true,  "algorithm": "", "category": "binary-tree",         "done": false, "title": "Maximum Depth of Binary Tree"},
+        {"isFrom75": true,  "algorithm": "", "category": "binary-tree",         "done": true, "title": "Maximum Depth of Binary Tree"},
         {"isFrom75": true,  "algorithm": "", "category": "binary-tree",         "done": false, "title": "Same Tree"},
         {"isFrom75": true,  "algorithm": "", "category": "binary-tree",         "done": true, "title": "Invert/Flip Binary Tree"},
         {"isFrom75": true,  "algorithm": "", "category": "binary-tree",         "done": false, "title": "Binary Tree Maximum Path Sum"},

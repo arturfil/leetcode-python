@@ -3,12 +3,15 @@ from BinaryTree.tree_node import TreeNode
 
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-        if root != None:
+        if root == None: return None
+        
+        left = root.right
+        right = root.left
 
-            left, right = root.left, root.right
-
-            root.left = self.invertTree(right)
-            root.right = self.invertTree(left)
+        root.left = self.invertTree(left)
+        root.right = self.invertTree(right)
 
         return root
+        
 
+             
